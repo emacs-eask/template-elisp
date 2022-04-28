@@ -4,7 +4,7 @@
 
 ;; Author: { FULL_NAME } <{ MAIL_ADDR }>
 ;; Maintainer: { FULL_NAME } <{ MAIL_ADDR }>
-;; URL:
+;; URL: https://github.com/user/repo
 ;; Version: 1.0.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords:
