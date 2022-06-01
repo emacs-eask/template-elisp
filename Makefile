@@ -4,8 +4,6 @@
 # File located in https://github.com/emacs-eask/template-elisp/blob/master/Makefile
 ##
 
-SHELL := /usr/bin/env bash
-
 EMACS ?= emacs
 EASK ?= eask
 
@@ -45,21 +43,21 @@ compile:
 test:
 	@echo "Testing..."
 	$(EASK) install-deps --dev
-	$(EASK) ert ./test/*.el
+	$(EASK) test ert ./test/*.el
 
 # Run checkdoc
 #
 # See https://www.emacswiki.org/emacs/CheckDoc
 checkdoc:
 	@echo "Checking documentation..."
-	$(EASK) checkdoc
+	$(EASK) lint checkdoc
 
 # Lint package metadata
 #
 # See https://github.com/purcell/package-lint
 lint:
 	@echo "Linting..."
-	$(EASK) lint
+	$(EASK) lint package
 
 # Generate autoloads file
 #
