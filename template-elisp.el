@@ -5,8 +5,8 @@
 ;; Author: { FULL_NAME } <{ MAIL_ADDR }>
 ;; Maintainer: { FULL_NAME } <{ MAIL_ADDR }>
 ;; URL: https://github.com/user/repo
-;; Version: 1.0.0
-;; Package-Requires: ((emacs "26.1"))
+;; Version: { VERSION }
+;; Package-Requires: ((emacs "{ EMACS_VERSION }"))
 ;; Keywords:
 
 ;; This file is not part of GNU Emacs.
