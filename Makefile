@@ -12,7 +12,11 @@ EASK ?= eask
 # CI entry point
 #
 # You can add or remove any commands here
-ci: clean package install compile checkdoc lint test
+#
+# (Option 1): Basic for beginner, only tests for package's installation
+ci: clean package install compile
+# (Option 2): Advanced for a high-quality package
+#ci: clean package install compile checkdoc lint test
 
 # Build an package artefact, default to `dist` folder
 #
@@ -50,7 +54,7 @@ test:
 # See https://www.emacswiki.org/emacs/CheckDoc
 checkdoc:
 	@echo "Checking documentation..."
-	$(EASK) lint checkdoc
+	$(EASK) lint checkdoc --strict
 
 # Lint package metadata
 #
