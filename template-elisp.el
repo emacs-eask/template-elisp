@@ -4,10 +4,10 @@
 
 ;; Author: { FULL_NAME } <{ MAIL_ADDR }>
 ;; Maintainer: { FULL_NAME } <{ MAIL_ADDR }>
-;; URL: https://github.com/user/repo
+;; URL: { WEBSITE_URL }
 ;; Version: { VERSION }
 ;; Package-Requires: ((emacs "{ EMACS_VERSION }"))
-;; Keywords:
+;; Keywords: { KEYWORDS }
 
 ;; This file is not part of GNU Emacs.
 
