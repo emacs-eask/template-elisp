@@ -85,4 +85,4 @@ pkg-file:
 #   - .eask folder (sandbox)
 #   - all .elc files
 clean:
-	$(EASK) clean-all
+	$(EASK) clean all
