@@ -31,17 +31,49 @@ eask compile
 
 ## Lint
 
-Linting is often optional but recommended to all elisp developers. The most used
-linters are `checkdoc` and `package-lint`:
+Linting is often optional but recommended to all elisp developers.
+
+with `checkodc`:
 
 ```sh
 eask lint checkodc
 ```
 
+with `package-lint`:
 
 ```sh
 eask lint package  # for pacakge-lint
 ```
+
+For more options, see `eask lint --help`!
+
+## Continuous Integration
+
+### CircleCI
+
+```sh
+eask generate workflow circle-ci
+```
+
+### GitHub Actions
+
+```sh
+eask generate workflow github
+```
+
+### GitLab Runner
+
+```sh
+eask generate workflow gitlab
+```
+
+### Travis CI
+
+```sh
+eask generate workflow travis-ci
+```
+
+For more options, see `eask generate workflow --help`!
 
 ## Learn More
 
