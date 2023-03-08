@@ -29,7 +29,17 @@ You would want to compile your elisp file to check if there are errors:
 eask compile
 ```
 
-## Lint
+## Cleaning
+
+Simply executes the following:
+
+```sh
+eask clean all
+```
+
+For more options, see `eask clean --help`!
+
+## Linting
 
 Linting is often optional but recommended to all elisp developers.
 
@@ -47,13 +57,15 @@ eask lint package  # for pacakge-lint
 
 For more options, see `eask lint --help`!
 
+## Testing
+
+Eask supports [ERT](https://www.gnu.org/software/emacs/manual/html_node/ert/index.html)
+, [Buttercup](https://github.com/jorgenschaefer/emacs-buttercup)
+, [Ecukes](https://github.com/ecukes/ecukes), and more.
+
+For more options, see `eask test --help`!
+
 ## Continuous Integration
-
-### CircleCI
-
-```sh
-eask generate workflow circle-ci
-```
 
 ### GitHub Actions
 
@@ -61,16 +73,10 @@ eask generate workflow circle-ci
 eask generate workflow github
 ```
 
-### GitLab Runner
+### CircleCI
 
 ```sh
-eask generate workflow gitlab
-```
-
-### Travis CI
-
-```sh
-eask generate workflow travis-ci
+eask generate workflow circle-ci
 ```
 
 For more options, see `eask generate workflow --help`!
