@@ -43,7 +43,7 @@ compile:
 # Run regression tests
 #
 # The default test is `ert`; but Eask also support other regression test!
-# See https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-linter
+# See https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-linting
 test:
 	@echo "Testing..."
 	$(EASK) install-deps --dev
