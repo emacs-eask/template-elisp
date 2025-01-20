@@ -43,16 +43,16 @@ For more options, see `eask clean --help`!
 
 Linting is often optional but recommended to all elisp developers.
 
-with `checkodc`:
+with `checkdoc`:
 
 ```sh
-eask lint checkodc
+eask lint checkdoc
 ```
 
 with `package-lint`:
 
 ```sh
-eask lint package  # for pacakge-lint
+eask lint package  # for package-lint
 ```
 
 For more options, see `eask lint --help`!
